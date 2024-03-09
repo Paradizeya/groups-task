@@ -1,0 +1,82 @@
+.card {
+  background: #cfdef3;
+  background: linear-gradient(200deg, #e0eafc 0%, #cfdef3 100%);
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 20px);
+  height: 100px;
+
+  .cardTitle {
+    .cardName {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .cardStatus {
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: lighter;
+      &Closed {
+        color: red;
+      }
+      &Open {
+        color: green;
+      }
+    }
+  }
+  .noAvatar {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.cardBody {
+  $fontSize: 1.15rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .cardUsersCount {
+    font-size: $fontSize;
+    text-align: end;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgba(19, 7, 90, 0.678);
+  }
+
+  .cardFriends {
+    @mixin bg {
+      background: rgb(141, 202, 230);
+      border-radius: 10px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    @include bg;
+
+    &Toggle {
+      font-size: $fontSize;
+      border: none;
+      @include bg;
+      padding: 10px 5px;
+    }
+    &List {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      padding: 0 10px 10px;
+      font-weight: 300;
+    }
+  }
+}

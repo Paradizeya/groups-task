@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "name": "Бойцовский клуб",
+    "closed": true,
+    "avatar_color": "red",
+    "members_count": 77,
+    "friends": [
+      {
+        "first_name": "Олег",
+        "last_name": "Победный"
+      },
+      {
+        "first_name": "Дмитрий",
+        "last_name": "Дробин"
+      },
+      {
+        "first_name": "Александр",
+        "last_name": "Стукало"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Механики",
+    "closed": false,
+    "avatar_color": "blue",
+    "members_count": 24
+  },
+  {
+    "id": 3,
+    "name": "Адская Кухня",
+    "closed": false,
+    "avatar_color": "red",
+    "members_count": 14326
+  },
+  {
+    "id": 4,
+    "name": "Базарчик",
+    "closed": false,
+    "avatar_color": "green",
+    "members_count": 45654,
+    "friends": [
+      {
+        "first_name": "Алиса",
+        "last_name": "Злотник"
+      },
+      {
+        "first_name": "Валентин",
+        "last_name": "Святой"
+      },
+      {
+        "first_name": "Виктория",
+        "last_name": "Победная"
+      },
+      {
+        "first_name": "Роман",
+        "last_name": "Ромашкин"
+      },
+      {
+        "first_name": "Антон",
+        "last_name": "Огурчик"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Секретики",
+    "closed": true,
+    "members_count": 36
+  },
+  {
+    "id": 6,
+    "name": "Садовый уголок",
+    "closed": false,
+    "avatar_color": "green",
+    "members_count": 321,
+    "friends": [
+      {
+        "first_name": "Роман",
+        "last_name": "Ромашкин"
+      }
+    ]
+  }
+]
