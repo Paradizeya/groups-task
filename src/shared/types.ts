@@ -16,3 +16,20 @@ export interface User {
   first_name: string;
   last_name: string;
 }
+
+export interface Filter {
+  name: string;
+  value: string[];
+}
+
+export interface AppliedFilter {
+  name: string;
+  value: string;
+}
+
+export interface GroupContext {
+  groups: Group[];
+  filters: Filter[];
+  appliedFilters: AppliedFilter[];
+  updateAppliedFilters: (newFilters: AppliedFilter[]) => void;
+}
